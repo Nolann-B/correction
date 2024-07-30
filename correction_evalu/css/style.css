@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: white;
+
+}
+.blanc {
+    color: white;
+}
+
+.vert {
+    background-color: rgb(75, 145, 71);
+}
+.none {
+    display: none;
+}
+.show {
+    display: block;
+}
+
+/* On va faire le HEADER  */
+header{
+background-image: url('../img/background.jpg');
+background-position: center;
+background-repeat: no-repeat;
+height: 700px;
+
+nav {
+    text-align: right;
+}
+nav>i {
+    font-size: 25px;
+    margin : 15px 15px 0 0;
+}
+
+}
+header h1, header h3 {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 70px;
+}
+
+
+/* Le menu en display none */
+
+#menu-div {
+    background-color: whitesmoke;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    ul li {
+        padding: 10px;
+    }
+
+    ul li a {
+        color: black;
+    }
+}
+
+
+/* Formulaire header */
+
+#form-div {
+    display: flex;
+    height: 550px; 
+    align-items: flex-end;
+    justify-content: center;
+
+    form {
+        margin: auto auto 30px auto;
+        padding: 20px;
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        background-color: rgba(128, 128, 128, 0.264);
+
+        div {
+            display: flex;
+            align-items: center;
+        }
+
+        div div {
+            background-color: grey;
+            padding: 3.9px 3px;
+            border: 1px solid grey;
+            border-radius: 2px;
+        }
+
+        input,select {
+            padding: 3px 10px;
+
+            i{
+                background-color: grey;
+            }
+        }
+    }
+}
+
+
+/*  Partie vente voitures */
+main {
+    width: 60%;
+    margin: auto;
+}
+
+main section{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.258);
+}
+
+main>div {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 0 0;
+}
+
+main section div:first-child{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 400px;
+
+    img{
+        width: 100%;
+    }
+}
+
+main section div:last-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    width: 300px;
+
+    p:first-child {
+        font-size: 2em;
+    }
+    p {
+        padding: 5px;
+    }
+
+    button {
+        width: 150px;
+        background-color: rgb(34, 173, 34);
+        border: 1px solid rgb(51, 182, 51);
+        padding: 6px 10px;
+        color: white;
+        border-radius: 3px;
+        font-weight: bold;
+    }
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+#agence {
+    width: 200px;
+    margin: 50px;
+}
+
+footer div:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer p:last-child {
+    color: red;
+    margin-top: 20px;
+}
